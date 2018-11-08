@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P,R,S - Github Hosted Client</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Paper, Rock, and Scissors
+  <br>
+  <img src="images/PRShead.png" width="250" height="250">
+  </h1>
+  <button id = "show_rules_button">Rules Button</button>
+  <button id ="show_stats_button">Stats Button</button>
+
+  <br><br><br>
+  <div id="feedback">
+    <feedG id = "good_feedback"></feedG>
+    <feedB id = "bad_feedback"></feedB>
+  </div>
+
+  <div id="rules" class="hidden">
+    <h2>Rules Button</h2>
+    The game of P, R, S is based on trust, skill and determination and a whole lotta luck.
+    Each player must:
+    <ul>
+      <li> In each round of the game, each player must select from one of the three following weapons: Paper, Rock, or Scissors.</li>
+      <li> Rock Beats Scissors </li>
+      <li> Rock Loses to Paper </li>
+      <li> Paper Beats Rock </li>
+      <li> Paper Loses to Scissors </li>
+      <li> Scissors Beats Paper </li>
+      <li> Scissors Loses to Rock </li>
+    </ul>
+    If you would like to read more, follow this link to view some <a href="http://worldrps.com/">official PRS organizations.</a>
+  </div>
+
+  <div id="stats" class="hidden">
+    <h2>Game Stats:</h2>
+
+      Number of Games Played: <h7 id = "gameCount">0</h7> <br>
+      Ties: <h7 id = "tieCount">0</h7> <br>
+      Wins: <h7 id = "winCount">0</h7> <br>
+      Losses: <h7 id = 'lossCount'>0</h7> <br>
+      Win to Loss Ratio: <h7 id = 'WLRatio'>0</h7> <br>
+      Rock Count: <h7 id = 'rockCount'>0</h7> <br>
+      Paper Count: <h7 id = 'paperCount'>0</h7> <br>
+      Scissors Count: <h7 id = 'scissorsCount'>0</h7> <br>
+
+      Browser Rock Count: <h7 id = 'oRockCount'>0</h7><br>
+      Browser Paper Count: <h7 id = 'oPaperCount'>0</h7><br>
+      Browser Scissors Count: <h7 id = 'oScissorsCount'>0</h7><br>
+
+      <br>
+      <br>
+      <table style="width:100%">
+        <tr>
+          <th></th>
+          <th>Rock</th>
+          <th>Paper</th>
+          <th>Scissors</th>
+        </tr>
+        <tr>
+        	<th><span class = "player_name_span"></span></th>
+          <td><h7 id = "rockStat"></h7></td>
+          <td><h7 id = "paperStat"></td>
+          <td><h7 id = "scissorsStat"></td>
+        </tr>
+        <tr>
+        	<th>B(r)owser</th>
+          <td><h7 id = "oRockStat"></h7></td>
+          <td><h7 id = "oPaperStat"></td>
+          <td><h7 id = "oScissorsStat"></td>
+        </tr>
+      </table>
+
+      <br>
+      <br>
+
+      <!-- Rock Statistic: <h7 id = "rockStat">0</h7> <br>
+      Paper Statistic: <h7 id = "paperStat">0</h7> <br>
+      Scissors Statistic: <h7 id = "scissorsStat">0</h7> <br> -->
+  </div>
+
+  <div id="enter_name" class="hidden">
+    <h2>Enter your Name</h2>
+    Choose your Username:<input type="text" id="name_textfield">
+    <button id = "name_button">Submit Name</button>
+  </div>
+
+  <div id="throw_choice" class = "hidden">
+    <h2>Play the Game</h2>
+    <h4><span class = "player_name_span"></span>, it's your turn to bust a move!</h4>
+    Enter your choice of weapon:
+    <select id= "throw_choice_select">
+      <option value="null"> </option>
+      <option value="Paper">Paper</option>
+      <option value="Rock">Rock</option>
+      <option value="Scissors">Scissors</options>
+    </select>
+    <button id = "throw_choice_button">Throw Choice</button>
+  </div>
+
+  <div id="game_results">
+
+    <img id="pImage" src="">
+    <img id="oImage" src="">
+    <br>
+    <ending id = "end" class="hidden">
+      You chose <re id = "Presult"></re> as your weapon of choice! The B(r)owser chose <re id = "Bresult"></re>!<br>
+      According to the rules of Paper, Rock, Scissors, you have <re id = Tresult></re> the game!
+    </ending>
+    <br>
+    <button id = "play_again_button">Play Again</button>
+    <button id = "full_restart_button">Full Restart</button>
+  </div>
+  <script src="scripts.js"></script>
+
+
+</body>
+
+<footer>
+  <p>Created by: Geordie Young</p>
+  <p>Date of Completion: 11/4/2018
+  <p>Contact information: <a href="mailto:ghyoungiv@gmail.com">
+  ghyoungiv@gmail.com</a>.</p>
+</footer>
+
+</html>

@@ -1,0 +1,92 @@
+h1 {
+  color: #ff0000;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+div {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: #ffffff;
+  background-color: #dddddd;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display:block;
+}
+
+table, th, td {
+   border: 1px solid black;
+   text-align: center;
+}
+
+
+
+feedG{
+  background-color: #cee5d7;
+  color: #51e800;
+  font-size: 20px;
+  color:green;
+}
+
+feedB{
+  background-color: #cee5d7;
+  color: #51e800;
+  font-size: 20px;
+  color:red;
+}
+
+
+
+pImage{
+  width: auto;
+  height:auto;
+}
+
+oImage{
+  width:auto;
+  height:auto;
+}
+
+end{
+  visibility: hidden;
+}
+
+re{
+  font-weight: bold;
+}
+
+#rules{
+  background-color: #bf8bbe;
+}
+
+#stats{
+  background-color: #709de5;
+}
+
+#game_results{
+  background-color: white;
+}
+
+#feedback{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#throw_choice{
+  background-color: #e5a369;
+}
+
+footer {
+  color:black;
+  display: block;
+  font-size: 12px;
+  padding: 10px 5px;
+  background-color: #bacfef;
+}
